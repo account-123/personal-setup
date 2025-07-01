@@ -93,6 +93,7 @@ class Builder:
         pacman.extend(BASE.pacman.common)
         aur.extend(BASE.aur.common)
 
+        '''
         for category in CUSTOM.keys():
             for package, info in CUSTOM[category].items():
                 if not info.selected:
@@ -101,6 +102,7 @@ class Builder:
                     aur.append(package)
                 else:
                     pacman.append(package)
+        '''
 
         for wm in ["bspwm", "hyprland"]:
             if getattr(self.build_options, f"install_{wm}"):
