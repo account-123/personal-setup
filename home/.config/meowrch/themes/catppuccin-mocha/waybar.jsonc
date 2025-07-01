@@ -11,15 +11,17 @@
     //==> Modules Layout
     ///////////////////////////////////////////////////////////////
 	"modules-left": [
-		"custom/l_end","tray","custom/r_end","custom/l_end","hyprland/workspaces","custom/r_end","custom/l_end","wlr/taskbar","custom/r_end","custom/padd"
+		"custom/padd","group/system-info","custom/l_end","hyprland/workspaces","custom/r_end","custom/l_end","wlr/taskbar","custom/r_end","custom/padd"
 	],
 	"modules-center": [
-		"group/system-info"
+		//"group/system-info"
+        "custom/l_end","idle_inhibitor","clock","custom/r_end"
 	],
+    
 	"modules-right": [
 		"group/system-levels",
 		"custom/l_end","idle_inhibitor","clock","custom/r_end",
-        "custom/l_end","hyprland/language","custom/r_end",
+        //"custom/l_end","hyprland/language","custom/r_end",
 		"group/control-panel", "custom/padd"
 	],
     "group/system-info": {
