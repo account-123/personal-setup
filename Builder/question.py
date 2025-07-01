@@ -151,7 +151,7 @@ class Question:
             answer = inquirer.prompt([question])
             answers.update(answer)
 
-        Question._choose_custom_packages()
+        #Question._choose_custom_packages()
         answers["ff_plugins"] = [
             i.split(" | ")[0] for i in answers["ff_plugins"]
         ]
